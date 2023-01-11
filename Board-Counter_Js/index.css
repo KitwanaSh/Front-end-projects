@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/alarm-clock');
+body {
+    margin: 0;
+    background-color: #0369A1; 
+    text-align: center;
+}
+h3 {
+    color: #fff;
+    font-family: Verdana;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.score {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    background: #000;
+    color: #F94F6D;
+    height: auto;
+}
+
+.element {
+     /*font-family: "Orbitron";*/
+     font-family: 'alarm clock', sans-serif;
+     font-size: 30px;
+     font-weight: 800;
+}
+.buttons {
+    display: flex;
+    margin-top: 5px;
+}
+button {
+    background-color: #9AABD8;
+    margin-left: 3px;
+    border: None;
+}
