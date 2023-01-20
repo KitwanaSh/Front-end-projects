@@ -5,7 +5,10 @@ let passwordEl2 = document.getElementById("password-el_1")
 
 function createpass() {
 	let makeIndex = Math.floor(Math.random() * characters.length)
-	passwordEl1.textContent += characters[makeIndex]
+	for (let i = 0; i < makeIndex.length; i++) {
+		console.log(makeIndex[i])
+	}
+	//passwordEl1.textContent += characters[makeIndex]
 	
 }
 
