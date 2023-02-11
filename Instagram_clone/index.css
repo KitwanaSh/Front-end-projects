@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+}
+
+.user-avatar {
+    width: 32px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.post .header {
+    display: flex;
+    justify-content: start;
+}
+
+.post .avatar {
+    width: 32px;
+}
+
+.post .img {
+    width: 100%;
+}
