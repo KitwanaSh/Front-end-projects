@@ -1,4 +1,5 @@
-let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+// let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+let fighters = ["some", "info", "ess", "mass", "system", "to", "use", "maybe", "later"]
 
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fightButton")
