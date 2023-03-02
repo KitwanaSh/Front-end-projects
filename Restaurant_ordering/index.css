@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-size: 18px;
     color: #000;
+    font-family: 'Courier New', Courier, monospace;
 } 
 h2 {
     font-size: 24px;
@@ -58,4 +59,30 @@ header, main {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+}
+.invoice {
+    display: none;
+}
+.order-title {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+}
+.order-btn {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgb(11, 238, 162);
+    color: whitesmoke;
+    font-weight: 400;
+    border: none;
+}
+.order-btn:hover,
+.order-btn::after,
+.order-btn:active {
+    opacity: 0.6;
+    cursor: pointer;
+    font-weight: 500;
 }

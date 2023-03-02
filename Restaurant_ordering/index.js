@@ -13,7 +13,9 @@ function getMenu(){
                 <p>${menu.ingredients}</p>
                 <p class = "price">$${menu.price}</p>
             </div>
-            <img src ="images/plus_icon.png" class ="icon" id = "icon">
+            <img src ="images/plus_icon.png"
+            class ="icon" 
+            data-plus= "${menu.id}" id = "icon">
         </div>
         `
     })
@@ -24,3 +26,16 @@ function render(){
     document.getElementById('menu').innerHTML = getMenu()
 }
 render()
+const invoices = document.getElementById("invoices")
+const icon = document.getElementById("icon")
+
+document.addEventListener("click", showChosen)
+
+function showChosen(e) {
+    if(e.target.dataset.plus){
+        invoices.style.display = "inline"
+        document.getElementById('tale').innerHTML = `
+        <h3>${menu.name}</h3>
+        `
+    }
+}
