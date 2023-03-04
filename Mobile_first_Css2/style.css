@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	color:  #404040;
+	font-family: sans-serif, 'Times-New-Roman', serif;
+}
+.startGame {
+	background-image: url("images/system.jpg");
+	background-size: cover;
+	background-blend-mode: darken;
+	color: #fff;
+	justify-content: space-between;
+	text-align: center;
+	min-height: 250px;
+}
+
+/* Typography */
+h1 {
+	font-size: 2.125em;
+}
+h2 {
+	font-size: 1.725em;
+}
+p {
+	font-size: 1em;
+	line-height: 1.325;
+}
+.cl {
+	color: #FF8C00;
+	font-weight: bold;
+}
+
+/* ======== */
+.startGame,
+.main-content {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.main-content {
+	align-items: center;
+	text-align: center;
+}
+.sec-title,
+.sub-tile {
+	margin-bottom: 0.5rem;
+	font-weight: 900;
+}
+.sec-title {
+	padding-top: 1.83rem;
+}
+
+.top-text {
+	order: -1;
+	border-top: 3px solid #FF8C00;
+	margin:  0 auto;
+}
+
+/* Form config */
+form, p {
+	max-width: 450px;
+}
+input, button {
+	width:  100%;
+	font-family: inherit;
+	border-radius: 5px;
+}
+input {
+	margin-bottom: 0.725rem;
+	border: 2px solid #404040;
+	padding: 0.375em 0;
+	text-align: center;
+}
+input:focus {
+	outline: none;
+	background-color: #FFFAFA;
+	border-color: #FF8C00;
+}
+.btn {
+	padding:  0.5em 0;
+	background-color: #FF8C00;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 900;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+.meta-text {
+	text-transform: uppercase;
+	font-size: 1.325em;
+	margin-bottom: 1.725rem;
+}
+.sml-text {
+	font-size: 0.5em;
+	color: #858585;
+}
+
+/*  AT THE LARGER SCREEN */
+/* ===================== */
+
+@media (min-width: 576px) {
+	body {
+		display: flex;
+	}
+	.startGame,
+	.main-content {
+		width: 50%;
+	}
+	h1 {
+		font-size: 5vw;
+	}
+	h2 {
+		font-size: 2.25rem;
+	}
+	p {
+		font-size: 1.25rem;
+		line-height: 2.3;
+	}
+	.startGame {
+		min-height: 100vh;
+	}
+	.main-content {
+		justify-content: center;
+		padding-top: 0;
+	}
+	.top-text {
+		font-size: 1.85rem;
+	}
+}
