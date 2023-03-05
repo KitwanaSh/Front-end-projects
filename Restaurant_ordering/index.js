@@ -34,8 +34,19 @@ document.addEventListener("click", showChosen)
 function showChosen(e) {
     if(e.target.dataset.plus){
         invoices.style.display = "inline"
-        document.getElementById('tale').innerHTML = `
-        <h3>${menu.name}</h3>
-        `
+        // document.getElementById('tale').innerHTML = `
+        // <h3>${menuArray.name}</h3>
+        // `
+        let sowMenu =``
+        menueArray.forEach(function(menu){
+            sowMenu =`
+            <h3>${menu.name}</h3>
+            `
+        })
+        return sowMenu
     }
 }
+function renderOrder() {
+    document.getElementById('tale') = showChosen()
+}
+renderOrder()
