@@ -97,6 +97,9 @@ footer {
 
 /* At the wider view */
 @media (min-width: 740px) {
+    body {
+        font-size: 1.235rem;
+    }
     .blog-section {
         grid-template-columns: repeat(3, 1fr);
     }
