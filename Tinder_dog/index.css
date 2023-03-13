@@ -1,0 +1,94 @@
+body {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    width: 550px;
+    height: 973px;
+    background: linear-gradient(180deg, #FFFFFF 33.29%, #F7F8FC 100%);
+}
+.head {
+    position: absolute;
+    width: 550px;
+    height: 81px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+.icon {
+    position: absolute;
+    width: 22px;
+    height: 20.69px;
+    
+}
+.incon-profile {
+    width: 32.33px;
+    height: 34px;
+    left: 18px;
+    top: 24px;
+}
+.incon-logo {
+    width: 84px;
+    height: 42px;
+    left: 233px;
+    top: 20px;
+}
+.incon-chat {
+    width: 34px;
+    height: 34px;
+    top: 24px;
+    left: 497px;
+}
+.section {
+    position: absolute;
+    width: 550px;
+    height: 892px;
+    left: 0-x;
+    top: 81px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%)
+}
+.dog-image {
+    width: 534px;
+    height: 751.44px;
+    left: 8px;
+    border-radius: 15px;
+    background-image: url("images/dog-teddy.jpg");
+    background-size: cover;
+}
+h2 {
+    width: 158.78px;
+    height: 36.41px;
+    top: 680.36px;
+    left: 20.34px;
+    /* typography */
+    color: #F8F8F8;
+    font: 'Poppins' 600 32px;
+    line-height: 36px;
+    text-align: center;
+}
+.dog-desc {
+    position: absolute;
+    bottom: 34px;
+}
+.tiny-text {
+    width: 176px;
+    height: 32px;
+    left: 20px;
+    top: 703px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    color: #B7B7B7;
+}
+.buttons {
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    display: flex;
+    margin-left: 10px;
+}
