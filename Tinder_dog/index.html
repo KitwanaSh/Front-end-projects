@@ -1,5 +1,7 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -10,14 +12,20 @@
         </header>
         <div class="section dog-image">
             <!-- <img class = "dog-image" src="images/dog-teddy.jpg"> -->
+            <img id = "like-dog" src="images/badge-like.png">
+            <img id = "nope-dog" src="images/badge-nope.png">
             <div class = "dog-desc">
                 <h2>Teddy, 30</h2>
                 <p class = "tiny-text">How you doin?</p>
             </div>
         </div>
         <div class="buttons">
-            <img id = "x-button" src="images/icon-cross.png">
-            <img id = "x-button" src="images/icon-heart.png">
+            <div class = "cover c-1">
+                <img id = "x-button" src="images/icon-cross.png">
+            </div>
+            <div class = "cover c-2">
+                <img id = "l-button" src="images/icon-heart.png">
+            </div>
         </div>
         <script src="/index.js" type="module"></script>
     </body>

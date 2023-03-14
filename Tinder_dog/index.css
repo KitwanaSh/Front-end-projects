@@ -56,6 +56,27 @@ body {
     background-image: url("images/dog-teddy.jpg");
     background-size: cover;
 }
+#like-dog,
+#nope-dog {
+    position: absolute;
+    width: 233.91px;
+    height: 116.26px;
+    top: 121.96px;
+    left: 14px;
+    border-radius: 10.38;
+    transform: rotate(-30deg);
+}
+#like-dog {
+    display: fixed;
+}
+#nope-dog {
+    display: none;
+}
+
+.dog-desc {
+    position: absolute;
+    bottom: 34px;
+}
 h2 {
     width: 158.78px;
     height: 36.41px;
@@ -64,13 +85,10 @@ h2 {
     /* typography */
     color: #F8F8F8;
     font: 'Poppins' 600 32px;
-    line-height: 36px;
+    /* line-height: 36px; */
     text-align: center;
 }
-.dog-desc {
-    position: absolute;
-    bottom: 34px;
-}
+
 .tiny-text {
     width: 176px;
     height: 32px;
@@ -80,7 +98,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 32px;
+    /* line-height: 32px; */
     /* identical to box height, or 133% */
     text-align: center;
     color: #B7B7B7;
@@ -91,4 +109,35 @@ h2 {
     left: 40%;
     display: flex;
     margin-left: 10px;
+}
+.cover {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.c-2 {
+    margin-left: 20px;
+}
+#x-button,
+#l-button {
+    padding-top: 13px;
+    padding-left: 13px;
+    width: 25px;
+    height: 25px;
+}
+.c-2:hover,
+.c-2::after {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+    cursor: pointer;
+
+}
+.c-1:hover,
+.c-1::after,
+.c-1:active,
+.c-1:focus {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+    cursor: pointer;
 }
