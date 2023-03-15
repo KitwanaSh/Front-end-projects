@@ -1,5 +1,7 @@
 // Remember to import the data and Dog class!
 import {dogs} from "/data.js"
-for (let dog of dogs) {
-    console.log(dog.name)
+import {Dog} from "/Dogs.js"
+
+function render() {
+    document.getElementById("reel-page").innerHTML = getDogHtml()
 }
