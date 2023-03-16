@@ -66,7 +66,7 @@ body {
     transform: rotate(-30deg);
 }
 #like-dog {
-    display: fixed;
+    display: none;
 }
 #nope-dog {
     display: none;
@@ -114,14 +114,15 @@ h2 {
     height: 50px;
     background-color: #fff;
     border-radius: 50%;
+    border: none;
 }
 .c-2 {
     margin-left: 20px;
 }
-#x-button,
-#l-button {
-    padding-top: 13px;
-    padding-left: 13px;
+#x-icon,
+#l-icon {
+    padding-top: 5px;
+    padding-left: 3px;
     width: 25px;
     height: 25px;
 }

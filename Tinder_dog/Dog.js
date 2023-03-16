@@ -5,6 +5,10 @@ class Dog {
     constructor(data) {
         Object.assign(this, data)
     }
+    setDogCondition(bL){
+        this.hasBeenLiked = bL
+        this.hasBeenSwiped = true
+    }
     getDogsDesc() {
         const { name, avatar, age, bio } = this
         return `
