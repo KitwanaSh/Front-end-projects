@@ -48,12 +48,11 @@ body {
     top: 81px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%)
 }
-.dog-image {
+#dog-image {
     width: 534px;
     height: 751.44px;
     left: 8px;
     border-radius: 15px;
-    background-image: url("images/dog-teddy.jpg");
     background-size: cover;
 }
 #like-dog,
@@ -75,7 +74,7 @@ body {
 
 .dog-desc {
     position: absolute;
-    bottom: 34px;
+    bottom: 200px;
 }
 h2 {
     width: 158.78px;
