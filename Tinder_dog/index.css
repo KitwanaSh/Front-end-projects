@@ -127,7 +127,9 @@ h2 {
     height: 25px;
 }
 .c-2:hover,
-.c-2::after {
+.c-2::after,
+.c-2:active,
+.c-2:focus {
     background: #DBFFF4;
     box-shadow: 0px 10px 20px #CCF1E6;
     cursor: pointer;

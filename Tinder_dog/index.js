@@ -16,6 +16,7 @@ function getNewDog() {
     currentDogIndex += 1
     currentDog = new Dog(dogs[currentDogIndex])
     render()
+    
 }
 
 const likeButton = document.getElementById("l-button")
@@ -24,24 +25,17 @@ const likeDog = document.getElementById("like-dog")
 const nopeDog = document.getElementById("nope-dog")
 
 
-likeButton.addEventListener("click", function(){
-    likeDog.style.display = "inline"
-    nopeDog.style.display = "none"
-})
-
 hateButton.addEventListener("click", clickHate)
 likeButton.addEventListener("click", clickLike)
 
 function clickHate(){
     nopeDog.style.display = "inline"
-    likeDog.style.display = "none"
-    currentDog.setDogCondition(true)
-    getNewDog()
+    currentDog.setDogCondition(false)
+    setTimeout( () => {getNewDog()}, 3000)
 }
 
 function clickLike(){
     likeDog.style.display = "inline"
-    nopeDog.style.display = "none"
     currentDog.setDogCondition(true)
-    getNewDog()
+    setTimeout( () => {getNewDog()}, 3000)
 }
