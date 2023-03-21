@@ -2,3 +2,141 @@ body {
 	margin:  0;
 	padding: 0;
 }
+.container {
+	/* light-color-picker */
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	left: 72px;
+	top: 80px;
+	background: #FFFDFE;
+}
+#color-form {
+	/* Rectangle 111 */
+	width: 550px;
+	height: 90px;
+	left: 0px;
+	top: 0px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+#repre {
+	/* colorPicker */
+	position: absolute;
+	width: 51px;
+	height: 34px;
+	left: 19px;
+	top: 27px;
+
+	background: #F55A5A;
+}
+select {
+	/* Select Menu/Trigger */
+
+
+	box-sizing: border-box;
+	position: absolute;
+	width: 312px;
+	height: 42px;
+	left: 87px;
+	top: 23px;
+	/* white */
+	background: #FFFFFF;
+	/* gray/300 */
+
+	border: 1px solid #D1D5DB;
+	/* shadow/sm */
+
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+}
+option {
+	/* Auto layout */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4px 0px;
+
+	position: absolute;
+	width: 312px;
+	height: 287px;
+	left: 87px;
+	top: 69px;
+	/* white */
+
+	background: #FFFFFF;
+	/* /ring-1/ring-black ring-opacity-5 shadow-lg */
+
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+}
+.submit-color {
+	/* get-button */
+	box-sizing: border-box;
+	position: absolute;
+	width: 123px;
+	height: 42px;
+	left: 412px;
+	top: 23px;
+	/* white */
+	background: #FFFFFF;
+	/* gray/300 */
+	border: 1px solid #D1D5DB;
+	/* shadow/sm */
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+
+	/* text-xs/leading-4/font-medium */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 40px;
+	/* identical to box height, or 133% */
+	/* gray/700 */
+	text-align: center;
+	color: #374151;
+	cursor: pointer;
+}
+.shown {
+	display: flex;
+	flex-direction: row;
+}
+.color {
+	/* Rectangle 106 */
+	width: 110px;
+	height: 400px;
+	top: 0px;
+}
+.a {
+	left: 0px;
+	background: #F55A5A;
+}
+.b {
+	left: 110px;
+	background: #2B283A;
+}
+.c {
+	left: 220px;
+	background: #FBF3AB;
+}
+.d {
+	left: 330px;
+	background: #AAD1B6;
+}
+.e {
+	left: 440px;
+	background: #A626D3;
+}
+.hex {
+	/* Hex-footer */
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(5, 110px);
+	width: 550px;
+	height: 46px;
+	left: 0px;
+	top: 504px;
+	text-align: center;
+	justify-content: center;
+}
