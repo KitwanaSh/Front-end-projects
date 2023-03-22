@@ -17,7 +17,7 @@ fetch("https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=7")
         
     })
 
-let sol = document.getElementById("sol")
+// let sol = document.getElementById("sol")
 
 // function getText() {
 //     Object.values(selectColor.options).
@@ -30,7 +30,21 @@ let sol = document.getElementById("sol")
 function handleSubmit(event) {
     event.preventDefault();
     let selectedOption = document.getAnimations("select-color")
-    sol.innerText = selectColor.value
+    repr.style.backgroundColor = selectColor.value
+    // sol.innerText = selectColor.value
 }
 
 submitColor.addEventListener("click", handleSubmit)
+
+fetch("https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=5")
+    .then( response => response.json())
+    .then( data => {
+        let getHtml = ""
+        for (let i of data.colors){
+            console.log(i.name.closest_named_hex)
+            getHtml += `
+            <div class = "hex-c">${i.name.closest_named_hex}</div>
+            `
+        }
+        document.getElementById("hex").innerHTML = getHtml
+    })
