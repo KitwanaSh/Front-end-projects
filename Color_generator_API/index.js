@@ -2,7 +2,8 @@ const selectColor = document.getElementById("select-color")
 const repr = document.getElementById("repre")
 const submitColor = document.getElementById("submit-color") 
 
-fetch("https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=7")
+// fetch("https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=7")
+fetch("https://www.thecolorapi.com/scheme?hex=24B1E0&mode=triad&count=6")
     .then( resp => resp.json())
     .then( data => {
         let html = ""
