@@ -1,4 +1,175 @@
 body {
 	padding: 0;
 	margin: 0;
+	/* initial-state */
+	position: absolute;
+	width: 550px;
+	height: 779px;
+	left: 96px;
+	top: 10px;
+
+	background: #FFFFFF;
 }
+.head {
+	/* header */
+	width: 550px;
+	height: 208px;
+	left: 0px;
+	top: 0px;
+
+	background: #0E0E0E;
+}
+.head-img {
+	position: absolute;
+	width: 550px;
+	height: 208px;
+	left: 0px;
+	top: 0px;
+	color: #FFFFFF;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/image_bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.find-title {
+	/* Find your film */
+	position: absolute;
+	width: 359px;
+	height: 47.55px;
+	left: 42px;
+	top: 47px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 42.7947px;
+	line-height: 24px;
+	/* or 56% */
+
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	letter-spacing: -0.045em;
+
+}
+.watch-lst {
+	/* My Watchlist */
+	position: absolute;
+	width: 114px;
+	height: 20px;
+	left: 390px;
+	top: 100px;
+
+	
+	/* identical to box height, or 143% */
+	
+}
+a {
+	text-decoration: none;
+	color: #FFF;
+	text-align: right;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+}
+.search-bar {
+	/* search-bar */
+	box-sizing: border-box;
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+
+	position: absolute;
+	width: 462px;
+	height: 38px;
+	left: 44px;
+	top: 189px;
+
+	/* white */
+	background: #FFFFFF;
+	/* gray/300 */
+
+	border: 1px solid #D1D5DB;
+	/* shadow/sm */
+
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 20px;
+}
+input {
+	/* Input */
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 13px;
+	gap: 8px;
+
+	width: 342px;
+	height: 38px;
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+}
+.search-btn {
+	/* Sort */
+
+	box-sizing: border-box;
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 9px 11px 9px 17px;
+	gap: 8px;
+	width: 120px;
+	height: 38px;
+	/* gray/50 */
+
+	background: #F9FAFB;
+	/* gray/300 */
+	border: 1px solid #D1D5DB;
+	border-radius: 0px 6px 6px 0px;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	cursor: pointer;
+}
+
+		/* When there is nothing upfont in the search 
+		  ===========================================
+		*/
+
+.i {
+	/* no-data-initial */
+	position: absolute;
+	width: 148px;
+	height: 90px;
+	left: 201px;
+	top: 420px;
+	opacity: 0.3;
+	/*display: none;*/
+}
+
+		/* When there is something 
+		  ========================
+		*/
+
+.movie-list {
+	/* data */
+	position: absolute;
+	width: 462px;
+	height: 536.41px;
+	left: 44px;
+	top: 271px;
+}
+
