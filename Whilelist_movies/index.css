@@ -157,7 +157,7 @@ input {
 	left: 201px;
 	top: 420px;
 	opacity: 0.3;
-	/*display: none;*/
+	display: none;
 }
 
 		/* When there is something 
@@ -171,5 +171,9 @@ input {
 	height: 536.41px;
 	left: 44px;
 	top: 271px;
+	color:  #000;
 }
-
+h2 {
+	font-weight: bolder;
+	color: black;
+}
