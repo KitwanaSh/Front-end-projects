@@ -157,7 +157,6 @@ input {
 	left: 201px;
 	top: 420px;
 	opacity: 0.3;
-	display: none;
 }
 
 		/* When there is something 
@@ -189,4 +188,11 @@ hr {
 .movie-txt {
 	margin: 0 0 0 20px;
 	padding: 0;
+}
+.add {
+	display: flex;
+	font-weight: bold;	
+}
+.fa-solid {
+	margin: 15px 20px 0 50px;
 }

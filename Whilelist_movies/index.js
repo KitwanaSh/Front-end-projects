@@ -10,6 +10,7 @@ const handleSearch = () => {
 	.then(resp => resp.json())
 	.then(data => {
 		console.log(data)
+		document.getElementById("i").style.display = "none"
 		let moVies = []
 		for(let mov of data.Search) {
 			moVies += `
@@ -19,7 +20,10 @@ const handleSearch = () => {
 					<h3 class = "title">Title: ${mov.Title}</h3>
 					<p>Type: ${mov.Type}</p>
 					<p>Year: ${mov.Year}</p>
-					<p>Id: ${mov.imdbID}</p>
+					<div class = "add">
+						<p>Id: ${mov.imdbID}</p>
+						<i class="fa-solid fa-circle-plus"></i><p>Watchlist</p>
+					</div>
 				</div>
 			</div>
 			<hr>
