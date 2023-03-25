@@ -13,7 +13,16 @@ const handleSearch = () => {
 		let moVies = []
 		for(let mov of data.Search) {
 			moVies += `
-			<h2>${mov.Title}</h2>
+			<div class = "movie-desc">
+				<img src = "${mov.Poster}"/>
+				<div class = "movie-txt">
+					<h3 class = "title">Title: ${mov.Title}</h3>
+					<p>Type: ${mov.Type}</p>
+					<p>Year: ${mov.Year}</p>
+					<p>Id: ${mov.imdbID}</p>
+				</div>
+			</div>
+			<hr>
 			`
 		}
 		movieList.innerHTML = moVies

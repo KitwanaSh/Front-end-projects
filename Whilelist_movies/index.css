@@ -173,7 +173,20 @@ input {
 	top: 271px;
 	color:  #000;
 }
-h2 {
+.movie-list>h2 {
 	font-weight: bolder;
 	color: black;
+}
+.movie-desc {
+	display: flex;
+}
+.movie-desc>img {
+	width: 100px;
+}
+hr {
+	margin: 20px 0;
+}
+.movie-txt {
+	margin: 0 0 0 20px;
+	padding: 0;
 }
