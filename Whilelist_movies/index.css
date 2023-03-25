@@ -191,6 +191,8 @@ hr {
 }
 .add {
 	display: flex;
+}
+.bt {
 	font-weight: bold;	
 }
 .fa-solid {

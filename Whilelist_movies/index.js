@@ -22,7 +22,7 @@ const handleSearch = () => {
 					<p>Year: ${mov.Year}</p>
 					<div class = "add">
 						<p>Id: ${mov.imdbID}</p>
-						<i class="fa-solid fa-circle-plus"></i><p>Watchlist</p>
+						<i class="fa-solid fa-circle-plus"></i><p class = "bt">Watchlist</p>
 					</div>
 				</div>
 			</div>
