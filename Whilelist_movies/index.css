@@ -198,3 +198,22 @@ hr {
 .fa-solid {
 	margin: 15px 20px 0 50px;
 }
+
+/* When there is no data found */
+.no-data {
+	/* no-data-initial */
+	position: absolute;
+	width: 321px;
+	height: 40px;
+	left: 100px;
+	top: 234px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	/* or 111% */
+	text-align: center;
+	color: #DFDDDD;
+}

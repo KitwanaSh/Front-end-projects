@@ -31,6 +31,11 @@ const handleSearch = () => {
 		}
 		movieList.innerHTML = moVies
 	})
+	.catch(err => {
+		movieList.innerHTML = `
+		<p class = "no-data">Unable to find what you’re looking for. Please try another search.</p>
+		`
+	})
 }
 
 searchButton.addEventListener("click", handleSearch)
