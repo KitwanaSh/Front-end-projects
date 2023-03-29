@@ -22,7 +22,8 @@ const handleSearch = () => {
 					<p>Year: ${mov.Year}</p>
 					<div class = "add">
 						<p>Id: ${mov.imdbID}</p>
-						<i class="fa-solid fa-circle-plus" id = "plus-btn"></i><p class = "bt">Watchlist</p>
+						<button id = "plus-btn" visible = true>
+						<i class="fa-solid fa-circle-plus" ></i>Watchlist</button>
 					</div>
 				</div>
 			</div>
@@ -42,27 +43,29 @@ searchButton.addEventListener("click", handleSearch)
 
 // Add a movie to the list
 const plusButton = document.getElementById("plus-btn")
-const data = {
-	title: movieTitle,
-	body: movieList
-}
 
-const options = {
-	method: "POST",
-	body: JSON.stringify(data),
-	header: {
-		"Content-Type": "application/json"
-	}
-}
 
-const handleAddMovies = () => {
-	movieTitle = searchMovies.value
-	fetch(`http://www.omdbapi.com/?apikey=634aecba&s=${movieTitle}`, options)
-	.then(response => response.json())
-	.then(data => {
-		console.log(data)
+
+if (plusButton) {
+	plusButton.addEventListener("click", function(e) {
+		e.preventDefault()
+		const data = {
+			title: movieTitle,
+			body: movieList
+		}
+
+		const options = {
+			method: "POST",
+			body: JSON.stringify(data),
+			header: {
+				"Content-Type": "application/json"
+			}
+		}
+		movieTitle = searchMovies.value
+		fetch(`http://www.omdbapi.com/?apikey=634aecba&s=${movieTitle}`)
+			.then(response => response.json())
+			.then(data => {
+				console.log("i have been clicked")
+			})
 	})
 }
-
-
-plusButton.addEventListener("click", handleAddMovies)

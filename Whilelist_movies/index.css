@@ -196,7 +196,18 @@ hr {
 	font-weight: bold;	
 }
 .fa-solid {
-	margin: 15px 20px 0 50px;
+	padding: 0 15px;
+}
+#plus-btn {
+	margin-left: 20px;
+	padding: 10px 30px;
+	background-color: #258DFF;
+	border:  none;
+	border-radius: 20px;
+	color: #f2d3d3;
+	font-weight: bord;
+	cursor: pointer;
+	font-size: 1.4rem;
 }
 
 /* When there is no data found */
