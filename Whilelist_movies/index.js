@@ -22,7 +22,7 @@ const handleSearch = () => {
 					<p>Year: ${mov.Year}</p>
 					<div class = "add">
 						<p>Id: ${mov.imdbID}</p>
-						<i class="fa-solid fa-circle-plus"></i><p class = "bt">Watchlist</p>
+						<i class="fa-solid fa-circle-plus" id = "plus-btn"></i><p class = "bt">Watchlist</p>
 					</div>
 				</div>
 			</div>
@@ -40,4 +40,29 @@ const handleSearch = () => {
 
 searchButton.addEventListener("click", handleSearch)
 
+// Add a movie to the list
+const plusButton = document.getElementById("plus-btn")
+const data = {
+	title: movieTitle,
+	body: movieList
+}
 
+const options = {
+	method: "POST",
+	body: JSON.stringify(data),
+	header: {
+		"Content-Type": "application/json"
+	}
+}
+
+const handleAddMovies = () => {
+	movieTitle = searchMovies.value
+	fetch(`http://www.omdbapi.com/?apikey=634aecba&s=${movieTitle}`, options)
+	.then(response => response.json())
+	.then(data => {
+		console.log(data)
+	})
+}
+
+
+plusButton.addEventListener("click", handleAddMovies)
