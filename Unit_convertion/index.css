@@ -17,4 +17,5 @@ body {
 .section {
     background: white;
     padding: 5px;
+    margin: 10px;
 }
