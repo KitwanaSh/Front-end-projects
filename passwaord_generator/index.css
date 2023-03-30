@@ -1,12 +1,12 @@
 body {
     margin: 0;
     /*background-color: #1F2937;*/
-    background-color: #000;
+    background-color: #080808;
     color: #fff;
 }
 .box {
     position: absolute;
-    left: 40%;
+    left: 10%;
     margin-top: 30px;
     padding: 50px;
     background-color: #1F2937;
