@@ -8,22 +8,21 @@ let createPassEl = document.getElementById("createpass")
 let passwordEl2 = document.getElementById("password-el2")
 
 createPassEl.addEventListener("click", function() {
-	const charLen = 7
-	password = ""
-	for (let i = 0; i <= charLen; i++) {
-		let ran = Math.floor( Math.random() * char.length)
-		password += char[ran]
-	}
+	renderRandom()
 	passwordEl.textContent = password
 })
 
 
 createPassEl.addEventListener("click", function() {
+	renderRandom()
+	passwordEl2.textContent = password
+})
+
+function renderRandom() {
 	const charLen = 7
 	password = ""
 	for (let i = 0; i <= charLen; i++) {
 		let ran = Math.floor( Math.random() * char.length)
 		password += char[ran]
 	}
-	passwordEl2.textContent = password
-})
+}
