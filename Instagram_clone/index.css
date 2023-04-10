@@ -3,16 +3,15 @@ html, body {
     padding: 0;
     max-width:  490px;
     height: 100vh;
-    border: 1px solid red;
     box-sizing: border-box;
 }
 .main-content {
-    padding: 0 10px;
+    /*padding: 0 5px;*/
 }
 .me {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .user-avatar {
@@ -27,9 +26,67 @@ html, body {
 hr {
     width: 370px;
 }
+
+/* Information about user */
+
+.post {
+    margin: 30px 10px;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+}
+.imo {
+    margin: 0 20px;
+}
+.name {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+.location {
+    margin-top: 0;
+    font-size: 0.85rem;
+    color: #808080;
+}
+.user-name .fa {
+    margin-left: auto;
+    color: #808080;
+}
 .avatar {
     width: 40px;
+    border-radius: 50%;
 }
 .images {
     width: 100%;
+}
+.post-attr {
+    display: flex;
+}
+.post-attr img,
+.post-attr .fa {
+    width: 40px;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.post-attr .fa {
+    margin-left: auto;
+}
+.comments {
+    margin-left: 10px;
+}
+.num-likes {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.user-comments {
+    margin-top: 0;
+    color: #808080;
+}
+.u-class {
+    font-weight: 520;
+    font-size: 1.125rem;
+    color: black;
 }

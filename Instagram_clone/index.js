@@ -34,27 +34,27 @@ let allPosts = ""
 
 for (let post of posts) {
     allPosts += `
-    <div class = "post-list">
-        <div class = "user-info">
-            <div>
-                <img src = "${post.avatar}" class = "avatar" />
-                <div>
-                    <p>${post.username}</p>
-                    <p>${post.location}</p>
-                </div>
-            <div>
-            <i class = "fa fa-ellipsis-v"></i>
+    <div class = "user-name">
+        <img src = "${post.avatar}" class = "avatar" />
+        <div class = "imo">
+            <p class = "name">${post.name}</p>
+            <p class = "location">${post.location}</p>
         </div>
-        <img src = "${post.post}" class = "images" />
-        <div class = "post-attr">
-            <div>
-                <img src = "images/icon-heart.png" class = "heart"/>
-                <img src = "images/icon-comment.png" />
-                <img src = "images/icon-dm.png" />
-            <div>
-            <i class = "fa fa-save"></i>
-        </div>
-    <div>
+        <i class = "fa fa-ellipsis-v"></i>
+    </div>
+        
+    </div>
+    <img src = "${post.post}" class = "images" />
+    <div class = "post-attr">
+        <img src = "images/icon-heart.png" class = "heart"/>
+        <img src = "images/icon-comment.png" />
+        <img src = "images/icon-dm.png" />
+        <i class = "fa fa-save"></i>
+    </div>
+    <div class = "comments">
+        <p class= "num-likes">${post.likes} likes</p>
+        <p class = "user-comments"><span class = "u-class">${post.username}</span> ${post.comment}</p>
+    </div>
     `
 }
 postList.innerHTML = allPosts
