@@ -27,36 +27,34 @@ const posts = [
         likes: 152
     }
 ]
-let html = ""
-let mainEl = document.getElementById("main")
-for (let i = 0; posts.length < i; i++) {
-    html += `
-             <article class="post">
-                    <div class="header container">
-                         <img class="avatar" src="${posts[i].avatar}">
-                         <div>
-                             <div>
-                                 <span class="name">${posts[i].name}</span>
-                             </div>
-                             <span class="location">${posts[i].location}</span>
-                         </div>
-                     </div>
-                     <div>
-                         <img class="img" src="${posts[i].post}">
-                     </div>
-                     <div class="control-bar container">
-                         <img src="images/icon-heart.png">
-                         <img src="images/icon-comment.png">
-                         <img src="images/icon-dm.png">                    
-                     </div>
-                     <div class="container">
-                         <span class="likes">${posts[i].likes} likes</span>
-                     </div>
-                     <div class="container">
-                         <p><span class="username">${posts[i].username}</span> ${posts[i].comment}</p>
-                     </div>
-                 </article>
-         `
- }
- mainEl.innerHTML = html;
+const postList = document.getElementById("post")
 
+
+let allPosts = ""
+
+for (let post of posts) {
+    allPosts += `
+    <div class = "post-list">
+        <div class = "user-info">
+            <div>
+                <img src = "${post.avatar}" class = "avatar" />
+                <div>
+                    <p>${post.username}</p>
+                    <p>${post.location}</p>
+                </div>
+            <div>
+            <i class = "fa fa-ellipsis-v"></i>
+        </div>
+        <img src = "${post.post}" class = "images" />
+        <div class = "post-attr">
+            <div>
+                <img src = "images/icon-heart.png" class = "heart"/>
+                <img src = "images/icon-comment.png" />
+                <img src = "images/icon-dm.png" />
+            <div>
+            <i class = "fa fa-save"></i>
+        </div>
+    <div>
+    `
+}
+postList.innerHTML = allPosts
