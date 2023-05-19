@@ -13,3 +13,8 @@ const interval = setInterval(() => {
         loading.innerHTML = "Completed"
     }
 }, 1000)
+
+// The cicle progress goes here
+
+const circonference = document.querySelector(".circle-p").getTotalLength()
+console.log(circonference)
