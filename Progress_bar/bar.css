@@ -33,3 +33,17 @@
     left: 0;
     margin: auto;
 }
+
+/* The cicle progress style is going here */
+
+.cir-progress {
+    position: absolute;
+    left: 47%;
+    top: 30px;
+    margin: auto;
+}
+
+.circle-p {
+    stroke-dasharray: 189;
+    stroke-dashoffset: 70;
+}
