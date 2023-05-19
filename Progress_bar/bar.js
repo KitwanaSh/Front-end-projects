@@ -16,5 +16,20 @@ const interval = setInterval(() => {
 
 // The cicle progress goes here
 
-const circonference = document.querySelector(".circle-p").getTotalLength()
-console.log(circonference)
+const circleProgress = document.querySelector(".circle-p")
+const loadCircle = document.querySelector(".load-circle")
+
+let index = 0
+const fakeRun = [0, 10, 20, 40, 50, 60, 70, 80, 90, 100]
+const circonference = circleProgress.getTotalLength()
+
+const intervalCircle = setInterval(() => {
+    let setCir = circonference - (fakeRun[index] / 100) * circonference
+    circleProgress.style.strokeDashoffset = setCir
+    loadCircle.innerHTML = Math.floor(setCir) + "%"
+    index++
+    if(index === fakeRun.length) {
+        clearInterval(intervalCircle)
+        loadCircle.innerHTML = "100%"
+    }
+}, 1000);
