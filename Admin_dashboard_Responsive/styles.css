@@ -43,6 +43,7 @@ body {
 
 .case {
 	display: flex;
+	padding-top: 10px;
 }
 .case h4 {
 	margin-right: 40px;
