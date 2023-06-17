@@ -20,6 +20,9 @@ function closeSidebar() {
 
 // ########### CHART ############ 
 
+// The website for the chart types : https://apexcharts.com/
+// The apexchart cdn link: <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+
 // ----- Bar Chart -----
 var barChartOptions = {
   series: [{
