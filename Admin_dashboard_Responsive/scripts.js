@@ -3,7 +3,7 @@
 let sidebarOpen = false
 let sidebar = document.getElementById("sidebar")
 
-function sidebarOpen() {
+function openSidebar() {
 	if(!sidebarOpen) {
 		sidebar.classList.add("sidebar-responsive")
 		sidebarOpen = true
@@ -17,11 +17,6 @@ function closeSidebar() {
 	}
 }
 
-const me = document.getElementById("me")
-
-me.addEventListener("click", function() {
-	console.log("clicked")
-})
 
 // ########### CHART ############ 
 
@@ -34,16 +29,16 @@ var barChartOptions = {
   type: 'bar',
   height: 350,
   toolbar: {
-  	false
+  	show: false
   },
 },
-color: {
+color: [
 	"#246dec",
 	"#cc3c43",
 	"#367952",
 	"#f5b74f",
 	"#4f35a1"
-},
+],
 plotOptions: {
   bar: {
   	distributed: true,
@@ -70,4 +65,3 @@ yaxis: {
 
 var barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartOptions);
 barChart.render();
-console.log("I am the Big Dog!")
