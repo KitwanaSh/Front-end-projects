@@ -50,9 +50,9 @@ plotOptions: {
 dataLabels: {
   enabled: false
 },
-legend: {
-	show: false
-},
+// legend: {
+// 	show: false
+// },
 xaxis: {
   categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
 },
