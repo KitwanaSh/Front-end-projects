@@ -3,12 +3,15 @@
 let sidebarOpen = false
 let sidebar = document.getElementById("sidebar")
 
+// Function for opening the sidebar
 function openSidebar() {
 	if(!sidebarOpen) {
 		sidebar.classList.add("sidebar-responsive")
 		sidebarOpen = true
 	}
 }
+
+// Function for closing the sidebar.
 
 function closeSidebar() {
 	if(sidebarOpen) {
